@@ -1,48 +1,30 @@
-# Gaze-RL
+##### Gaze-RL
 
-Implementation for "Deep Decision Making with RL" course project titled "Gaze-Guided RL for Object Search in AI2-THOR"
+Implementation for "Deep Decision Making with RL" course project titled "Gaze-Guided Reinforcement Learning for Visual Search"
 
-## Table of Contents
+Visual search is a fundamental task that humans perform effortlessly, but it remains challenging for autonomous agents. This project explores how human visual attention patterns can be leveraged to improve reinforcement learning for object search tasks in the AI2-THOR environment.
 
--   [Project Structure](#project-structure)
--   [Setup and Installation](#setup-and-installation)
--   [Usage](#usage)
+Our approach combines:
 
-## Project Structure
+- A pretrained gaze prediction model
+- Three integration methods for incorporating gaze information:
+  - Channel integration
+  - Bottleneck integration
+  - Weighted integration
+- A dual-level integration framework that utilises gaze for both perception and reward shaping
 
-```bash
-Gaze-RL/
-├── configs/
-├── notebooks/
-│   └── ai2thor_exploration.ipynb
-├── src/
-│   ├── environments/
-│   │   ├── __init__.py
-│   │   ├── ai2thor_env.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── agents.py
-│   │   ├── gaze_predictor.py
-│   │   └── networks.py
-│   │── __init__.py
-│   │── train.py
-│   │── eval.py
-│   └── utils.py
-├── requirements.txt
-├── .gitignore
-└── README.md
-
-```
-
-## Setup and Installation
+**Setup and Installation**
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate gaze-rl-stable
 ```
 
-## Usage
+**Usage**
 
 <!-- ```bash
 cd Gaze-RL/
-python -m src.train configs/<config_name>.yaml
+python src/train_gaze_guided_rl_final.py --target Microwave --integration channel --exp-name gaze_channel_exp
 ``` -->
+
+For a detailed explanation of this project, including motivation, methodology, and comprehensive results, visit our [blog post](https://monishver11.github.io/projects/2_project/).
