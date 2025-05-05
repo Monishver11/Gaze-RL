@@ -16,15 +16,25 @@ Our approach combines:
 **Setup and Installation**
 
 ```bash
-conda env create -f environment.yml
-conda activate gaze-rl-stable
+#Clone the repository
+git clone https://github.com/yourusername/Gaze-RL.git
+cd Gaze-RL
+
+#Create a conda environment
+conda create -n gaze-rl python=3.9
+conda activate gaze-rl
+
+#Install dependencies
+pip install -r requirements.txt
 ```
 
 **Usage**
 
-<!-- ```bash
+To train an agent with gaze integration:
+
+```bash
 cd Gaze-RL/
 python src/train_gaze_guided_rl_final.py --target Microwave --integration channel --exp-name gaze_channel_exp
-``` -->
+```
 
 For a detailed explanation of this project, including motivation, methodology, and comprehensive results, visit our [blog post](https://monishver11.github.io/projects/2_project/).
