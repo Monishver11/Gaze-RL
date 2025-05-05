@@ -21,8 +21,8 @@ git clone https://github.com/Monishver11/Gaze-RL.git
 cd Gaze-RL
 
 #Create a conda environment
-conda create -n gaze-rl python=3.9
-conda activate gaze-rl
+conda env create -f environment.yml
+conda activate gaze-rl-stable
 
 #Install dependencies
 pip install -r requirements.txt
