@@ -1,4 +1,4 @@
-##### Gaze-RL
+### Gaze-RL
 
 Implementation for "Deep Decision Making with RL" course project titled "Gaze-Guided Reinforcement Learning for Visual Search"
 
