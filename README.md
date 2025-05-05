@@ -17,7 +17,7 @@ Our approach combines:
 
 ```bash
 #Clone the repository
-git clone https://github.com/yourusername/Gaze-RL.git
+git clone https://github.com/Monishver11/Gaze-RL.git
 cd Gaze-RL
 
 #Create a conda environment
